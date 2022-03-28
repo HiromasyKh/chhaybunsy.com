@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
+type SloganProps = {
+  children: React.ReactNode;
+};
 
-loganProps = PropTypes.InferProps<typeof sloganPropTypes>;
-
-const Slogan = (sloganProp) => {
-  const { children } = sloganProp;
-
+const Slogan = ({ children }: SloganProps) => {
   return (
     <div className="max-w-3xl w-full mx-auto flex justify-center items-center p-8">
       <blockquote className="relative p-4 text-xl">
@@ -17,7 +15,5 @@ const Slogan = (sloganProp) => {
     </div>
   );
 };
-
-Slogan.propTypes = sloganPropTypes;
 
 export default Slogan;

@@ -1,18 +1,9 @@
-import PropTypes from "prop-types";
-import { FunctionComponent } from "react";
-
-const workExperienceCardPropTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+type WorkExperienceCardProps = {
+  title: string;
+  description: string;
 };
 
-type WorkExperienceCardProps = PropTypes.InferProps<
-  typeof workExperienceCardPropTypes
->;
-
-const WorkExperienceCard: FunctionComponent<WorkExperienceCardProps> = (
-  props
-) => {
+const WorkExperienceCard = (props: WorkExperienceCardProps) => {
   const { title, description } = props;
   return (
     <div className="pt-4">
@@ -21,7 +12,5 @@ const WorkExperienceCard: FunctionComponent<WorkExperienceCardProps> = (
     </div>
   );
 };
-
-WorkExperienceCard.propTypes = workExperienceCardPropTypes;
 
 export default WorkExperienceCard;

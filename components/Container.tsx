@@ -1,21 +1,13 @@
-import PropTypes from "prop-types";
-
 import Head from "next/head";
 
 import NavBar from "./NavBar";
 import MainSection from "./MainSection";
 import Footer from "./Footer";
-import { FunctionComponent } from "react";
 
-const containerPropTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+type ContainerProps = {
+  children: React.ReactNode;
 };
-
-type ContainerProps = PropTypes.InferProps<typeof containerPropTypes>;
-
-const Container: FunctionComponent<ContainerProps> = (containerProps) => {
-  const { children } = containerProps;
-
+const Container = ({ children }: ContainerProps) => {
   const meta = {
     title: "Chhay Bunsy – Personal Blog",
     description: `Next JS with Tailwind CSS`,
@@ -44,7 +36,5 @@ const Container: FunctionComponent<ContainerProps> = (containerProps) => {
     </div>
   );
 };
-
-Container.propTypes = containerPropTypes;
 
 export default Container;
