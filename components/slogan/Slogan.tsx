@@ -1,5 +1,5 @@
 type SloganProps = {
-  children: React.ReactNode;
+  children: string;
 };
 
 const Slogan = ({ children }: SloganProps) => {

@@ -9,7 +9,7 @@ const Profile = () => {
         <h1 className="text-3xl sm:text-5xl pb-1">
           Hi, I&apos;m <span className="font-bold">Bunsy</span>.
         </h1>
-        <p className="text-justify sm:text-left text-gray-600 dark:text-gray-200">
+        <p className="text-left text-gray-600 dark:text-gray-200">
           I am a graduated student in{" "}
           <span className="font-semibold">Computer Science</span> at{" "}
           <span className="font-semibold">

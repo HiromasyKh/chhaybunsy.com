@@ -7,6 +7,7 @@ import Footer from "./Footer";
 type ContainerProps = {
   children: React.ReactNode;
 };
+
 const Container = ({ children }: ContainerProps) => {
   const meta = {
     title: "Chhay Bunsy – Personal Blog",
